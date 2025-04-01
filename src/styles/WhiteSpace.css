@@ -1,0 +1,64 @@
+/* whitespace.css */
+
+.canvas {
+  position: absolute;
+  left: 70px; /* Adjust based on sidebar width */
+  top: 70px; /* Increased to avoid overlap */
+  right: 10px;
+  bottom: 10px;
+  background: radial-gradient(circle, #ddd 1px, transparent 1px);
+  background-size: 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: left 0.3s ease-in-out;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  overflow: auto;
+  min-width: 1000px; /* Increases horizontal overflow */
+  min-height: 1000px; /* Increases vertical overflow */
+}
+
+/* Adjust canvas position when sidebar expands */
+.sidebar.expanded + .canvas {
+  left: 190px;
+}
+
+/* Dropped Components */
+.dropped-component {
+  position: absolute;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: grab;
+  transition: transform 0.2s ease-in-out;
+}
+
+.dropped-component:active {
+  transform: scale(1.05);
+}
+
+/* Input Field for Activity */
+.dropped-component input {
+  border: none;
+  background: transparent;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+}
+
+.dark-mode .start-connector {
+  background: white;
+}
+
+.dark-mode .end-connector {
+  background: white; /* White connectors in dark mode */
+}
+
+.dark-mode .canvas svg line {
+  stroke: white; /* White lines in dark mode */
+}

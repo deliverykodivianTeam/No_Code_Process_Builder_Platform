@@ -1,0 +1,36 @@
+/* Main Container */
+.app-container {
+    display: flex;
+    height: calc(100vh - 50px); /* Adjusted for top bar */
+    width: 100vw;
+    margin-top: 50px; /* Space for top navbar */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 0px) {
+    .app-container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 70px;
+      padding: 15px;
+    }
+  
+    .sidebar.expanded {
+      width: 200px;
+    }
+  
+    .canvas {
+      left: 100px;
+    }
+  
+    .sidebar.expanded ~ .canvas {
+      left: 150px;
+    }
+  
+    .toolbox {
+      left: 100px;
+      width: 200px;
+    }
+  }

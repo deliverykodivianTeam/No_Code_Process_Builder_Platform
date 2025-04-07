@@ -1,0 +1,163 @@
+/* Dashboard.css - Day Mode (Default) */
+
+body {
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: white;
+  color: black;
+}
+
+.diagram-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+.diagram-container h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.saved-diagram-item {
+  border-bottom: 1px solid #eee; /* Light border */
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.saved-diagram-item:last-child {
+  border-bottom: none;
+}
+
+.saved-diagram-item p {
+  color: #555;
+}
+
+.saved-diagram-item input[type="text"] {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.saved-diagram-item button {
+  background-color: #e0e0e0; /* Light gray button */
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #333;
+}
+
+.saved-diagram-item button:hover {
+  background-color: #d0d0d0; /* Slightly darker gray on hover */
+}
+
+.saved-diagram-item button.delete {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  background-color: black; /* Red for delete */
+  color: white;
+}
+
+.saved-diagram-item button.delete:hover {
+  background-color: red; /* Darker red on hover */
+}
+
+.saved-diagram-item button.edit {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  background-color: black; /* Blue for edit */
+  color: white;
+}
+
+.saved-diagram-item button.edit:hover {
+  background-color: green; /* Darker blue on hover */
+}
+
+.create-new {
+  font-weight: bold;
+  background-color: black; /* Blue for create new */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.create-new:hover {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #1565c0; /* Darker blue on hover */
+}
+
+/* Dashboard.css - Dark Mode */
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode .diagram-container {
+  background-color: #1e1e1e;
+  border: 1px solid #373737;
+}
+
+.dark-mode .diagram-container h2 {
+  color: white;
+}
+
+.dark-mode .saved-diagram-item {
+  border-bottom: 1px solid #373737;
+}
+
+.dark-mode .saved-diagram-item p {
+  color: #bdbdbd;
+}
+
+.dark-mode .saved-diagram-item input[type="text"] {
+  background-color: #272727;
+  border: 1px solid #424242;
+  color: #e0e0e0;
+}
+
+.dark-mode .saved-diagram-item button {
+  background-color: #272727;
+  color: #e0e0e0;
+}
+
+.dark-mode .saved-diagram-item button:hover {
+  background-color: #373737;
+}
+
+.dark-mode .saved-diagram-item button.delete {
+  font-weight: bold;
+  background-color: white;
+  color: black;
+}
+
+.dark-mode .saved-diagram-item button.delete:hover {
+  color: white;
+  background-color: #b71c1c;
+}
+
+.dark-mode .saved-diagram-item button.edit {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode .saved-diagram-item button.edit:hover {
+  background-color: green;
+  color: white;
+}
+
+.dark-mode .create-new {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode .create-new:hover {
+  color: white;
+  background-color: #1565c0;
+}

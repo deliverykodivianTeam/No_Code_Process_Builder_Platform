@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Sidebar from "../components/Sidebar";
+import Sidebar from "../components/Process_Sidebar";
 
-const Help = () => {
+const Logout = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleSidebar = () => {
@@ -16,4 +16,4 @@ const Help = () => {
   );
 };
 
-export default Help;
+export default Logout;

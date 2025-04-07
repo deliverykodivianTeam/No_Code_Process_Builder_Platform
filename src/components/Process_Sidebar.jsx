@@ -67,7 +67,7 @@ const Sidebar = ({ isExpanded, toggleSidebar }) => {
           </button>
         </Link>
 
-        <Link to="/logout" className="sidebar-link">
+        <Link to="/studio_page" className="sidebar-link">
           <button className="sidebar-link">
             <FaSignOutAlt />
             {isExpanded && <span>Logout</span>}

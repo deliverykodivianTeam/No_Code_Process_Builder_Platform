@@ -56,8 +56,9 @@
 }
 
 .sidebar button:hover {
-  background: #e0e0e0;
-  transform: scale(1.05);
+  color: white;
+  background: black;
+  transform: scale(1.1);
 }
 
 /* Hide text when sidebar is collapsed */
@@ -108,8 +109,11 @@ body.dark-mode {
 }
 
 body.dark-mode .sidebar {
+  background-color: #111;
+  border: none !important;
+  box-shadow: none !important;
   /* Assuming your sidebar has a class of "sidebar" */
-  background-color: #222; /* Dark sidebar background */
+  /* Dark sidebar background */
   color: #ddd; /* Dark sidebar text color */
 }
 
@@ -126,5 +130,6 @@ body.dark-mode button {
 }
 
 body.dark-mode button:hover {
-  background-color: black;
+  background-color: white;
+  color: black;
 }

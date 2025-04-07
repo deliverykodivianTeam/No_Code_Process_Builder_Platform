@@ -1,0 +1,220 @@
+/* WhiteSpace.css */
+.canvas {
+  position: absolute;
+  left: 70px;
+  top: 70px;
+  right: 10px;
+  bottom: 10px;
+  background: radial-gradient(circle, #ddd 1px, transparent 1px);
+  background-size: 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: left 0.3s ease-in-out;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  overflow: auto;
+  min-width: 2000px;
+  min-height: 2000px;
+}
+
+.dropped-component {
+  position: absolute;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.dropped-component.start,
+.dropped-component.end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+}
+
+.dropped-component.start {
+  background: rgb(182, 255, 66);
+}
+
+.dropped-component.activity {
+  background: white;
+}
+
+.dropped-component.end {
+  background: rgb(255, 134, 66);
+}
+
+.dropped-component.exclusive {
+  background: white;
+  background: transparent; /* Make the background transparent */
+  border: 4px solid blue; /* Add a dashed gray border */
+  width: 50px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* Remove default padding */
+  transform: rotate(45deg);
+}
+
+.dark-mode .dropped-component.start {
+  background: #43a047;
+}
+
+.dark-mode .dropped-component.activity {
+  background: #fdd835;
+}
+
+.dark-mode .dropped-component.end {
+  background: #e53935;
+}
+
+.dark-mode .dropped-component.exclusive {
+  background: #1e88e5;
+}
+
+.sidebar.expanded + .canvas {
+  left: 190px;
+}
+
+.dropped-component {
+  outline: none;
+  box-shadow: none;
+  border: none;
+  position: absolute;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: grab;
+  transition: transform 0.2s ease-in-out;
+}
+
+.dropped-component:active {
+  transform: scale(1.05);
+}
+
+.dropped-component input {
+  border: none;
+  background: transparent;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+}
+
+.dark-mode .canvas svg line {
+  stroke: white;
+}
+
+.dark-mode .canvas marker {
+  stroke: white;
+}
+
+.connector-point {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray; /* Gray color for connector points */
+  cursor: pointer;
+  z-index: 10;
+}
+
+.connector-point.top {
+  top: -15px; /* Adjust position */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.connector-point.bottom {
+  bottom: -15px; /* Adjust position */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.connector-point.left {
+  left: -15px; /* Adjust position */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.connector-point.right {
+  right: -15px; /* Adjust position */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dropped-component.activity input {
+  background: transparent;
+  border: 1px dashed gray;
+  padding: 5px;
+}
+
+.dark-mode .dropped-component.exclusive{
+  background-color: black;
+}
+
+.dark-mode .dropped-component.exclusive input{
+  color: white;
+}
+
+.dark-mode .dropped-component.activity{
+  border: 3px dashed white;
+  background-color: black;
+}
+
+.dark-mode .dropped-component.activity input{
+  color: white;
+}
+
+.dropped-component.exclusive:active {
+  transform: scale(1.05);
+}
+
+.dropped-component.exclusive .connector-point {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.dropped-component.exclusive .connector-point.top {
+  top: -5px;
+  left: 0%;
+  transform: translateX(-50%);
+}
+
+.dropped-component.exclusive .connector-point.bottom {
+  bottom: -5px;
+  left: 100%;
+  bottom: 90%;
+  transform: translateX(-50%);
+}
+
+.dropped-component.exclusive .connector-point.left {
+  left: -5px;
+  top: 100%;
+  left: 90%;
+  transform: translateY(-50%);
+}
+
+.dropped-component.exclusive .connector-point.right {
+  right: -5px;
+  right: 90%;
+  top: 100%;
+  transform: translateY(-50%);
+}

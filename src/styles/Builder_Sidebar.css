@@ -1,0 +1,147 @@
+.sidebox-container {
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: stretch;
+    z-index: 999;
+  }
+  
+  .menu-btn {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+
+
+  .content-area {
+    position: relative;
+    min-height: 100vh;
+    flex-grow: 1;
+    margin-left: 70px;
+    margin-right: 0px;
+    padding: 20px;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .content-area.sidebar.open{
+    margin-left: 200px;
+  }
+
+  
+  .sidebar.open ~ .content-area {
+    margin-left: 200px;
+  }
+  
+  .sidebox {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 60px;
+    background-color: #716d6d;
+    padding-top: 50px;
+    transition: width 0.2s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start
+  }
+  
+  .sidebox.open {
+    width: 200px;
+  }
+  
+  .sidebox ul {
+    list-style: none;
+    padding: 0;
+    flex-grow: 1;
+  }
+  
+  .sidebox li {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebox li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .sidebox li .icon {
+    font-size: 22px;
+  }
+  
+  .dashboard-side{
+    background-color: #716d6d;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+  
+  }
+  .form-side{
+    background-color: #716d6d;
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    
+  }
+  .template-side {
+    background-color: #716d6d;
+    position: absolute;
+    top: 200px;
+    width: 100%;
+  
+  }
+  
+  .dashboard-side:hover,
+  .form-side:hover,
+  .template-side:hover {
+    background-color: #2a1b1b;
+  }
+  
+  .setting-side {
+    background-color: #716d6d;
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+  }
+  
+  .help-side {
+    background-color: #716d6d;
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+  }
+  
+  .setting-side:hover,
+  .help-side:hover {
+    background-color: #2a1b1b;
+  }
+  
+  .sidebox.closed ul li span {
+    display: none;
+  }
+  
+  .sidebox.closed ul li {
+    justify-content: center;
+  }
+  
+  .sidebox ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }

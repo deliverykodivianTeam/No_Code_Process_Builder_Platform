@@ -17,8 +17,8 @@ const Login = () => {
     }
 
     // Simple authentication check (you can replace it with API call)
-    if (email === "test@example.com" && password === "password123") {
-      navigate("/whiteboard"); // Redirect to Whiteboard
+    if (email === "rithishpg0@gmail.com" && password === "Rithish@123") {
+      navigate("/studio_page"); // Redirect to Whiteboard
     } else {
       setError("Invalid credentials. Try again!");
     }
@@ -51,8 +51,8 @@ const Login = () => {
             />
           </div>
 
-          <button type="submit" className="login-button">
-            Login
+          <button type="submit" className="login-button" onClick={handleLogin}>
+            LOGIN
           </button>
         </form>
       </div>

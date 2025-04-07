@@ -40,9 +40,9 @@
 }
 
 .toolbox .tool {
-  transform: scale(1.05);
+  transform: scale(1); /* Removed the scale */
   background: #fdfdfd;
-  padding: 8px;
+  padding: 4px; /* Reduced padding */
   color: rgb(3, 3, 3);
   border-radius: 5px;
   font-weight: bold;
@@ -52,7 +52,7 @@
 
 .toolbox .tool:hover {
   transform: scale(1.1);
-  background: #e0e0e0;
+  background: #eee;
   color: rgb(11, 11, 11);
 }
 
@@ -76,21 +76,21 @@
 
 /* Dark Mode Styles */
 .dark-mode .toolbox {
-  background: #333; /* Dark background */
+  background: black; /* Dark background */
   color: #f0f0f0; /* Light text */
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Light shadow */
 }
 
 .dark-mode .toolbox .tool,
 .dark-mode .draggable {
-  background: #444; /* Darker button background */
+  background: black; /* Darker button background */
   color: #f0f0f0; /* Light text */
 }
 
 .dark-mode .toolbox .tool:hover,
 .dark-mode .draggable:hover {
-  background: #555; /* Slightly lighter hover background */
-  color: #fff;
+  background: white; /* Slightly lighter hover background */
+  color: black;
 }
 
 .dark-mode .toolbox-header {

@@ -1,0 +1,70 @@
+.dashboard-container {
+  font-family: sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+}
+
+.dashboard-container h1 {
+  margin-bottom: 30px;
+  text-align: center; /* Center the title */
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Responsive grid */
+  gap: 20px;
+  width: 80%; /* Adjust width as needed */
+  max-width: 1200px; /* Maximum width for larger screens */
+}
+
+.option,
+.option a {
+  /* Style for both regular options and links */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit color from parent */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.option:hover,
+.option a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.option img,
+.option a img {
+  width: 60px; /* Adjust icon size */
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.option p,
+.option a p {
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Specific styling for the Workflow link */
+.option a {
+  background-color: #f0f8ff; /* Light blue background */
+  border-color: #add8e6; /* Light blue border */
+  color: #00008b; /* Dark blue text */
+}
+
+.option a:hover {
+  background-color: #e0f2fe; /* Lighter blue on hover */
+  border-color: #90caf9; /* Lighter blue border on hover */
+}

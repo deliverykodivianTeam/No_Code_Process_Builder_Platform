@@ -23,7 +23,10 @@ const Studio_Page = () => {
           <img src="/public/assets/dashboard-reports-icon.png" alt="Dashboard & Reports" />
           <p>Dashboard & Reports</p>
         </div>
-        
+        <div className="option">
+          <img src="/public/assets/dms-icon.png" alt="DMS" />
+          <p>DMS</p>
+        </div>
       </div>
     </div>
   );

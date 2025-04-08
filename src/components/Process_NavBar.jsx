@@ -11,7 +11,7 @@ const NavBar = ({ onClear, onUndo, onRedo, onSave }) => { // Add onSave prop
             <button onClick={onRedo}>Redo</button>
             <button>Align</button>
             <button onClick={onSave}>Save</button> {/* Call onSave */}
-            <button>Export</button>
+         
             <img
                 src="/public/assets/login_logo.png"
                 alt="Login_logo"
